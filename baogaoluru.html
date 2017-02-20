@@ -1,0 +1,76 @@
+<!--
+	作者：431890663@qq.com
+	时间：2016-09-14
+	描述：淡轻语的一个F7小物件
+-->
+<div class="navbar">
+	<div class="navbar-inner">
+		<div class="left">
+			<a href="index.html" class="back link" onclick="back();"> <i class="icon icon-back"></i></a>
+		</div>
+		<div class="center sliding">
+			<div id="baogaoluru-title-buttons">
+				<a> 离线</a>
+				<a> 复制</a>
+				<a> 模板</a>
+				<a> 解锁</a>
+				<a> 全选</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="pages">
+	<!-- Page, data-page contains page name-->
+	<div data-page="baogaoluru" class="page">
+		<!-- Scrollable page content-->
+		<div class="page-content" id="baogaoluru">
+			<form data-search-list=".search-here" data-search-in=".item-title" class="searchbar searchbar-init">
+				<div class="searchbar-input">
+					<input type="search" placeholder="设备编号/使用单位/使用证号/注册代码">
+					<a href="#" class="searchbar-clear"></a>
+				</div>
+				<a href="#" class="searchbar-cancel">取消</a>
+			</form>
+			<!--列表-->
+			<div id="baogaoluru-list">
+				<p id="baogaoluru-load">数据加载中...</p>
+			</div>
+			<!--测试模板必须放在page层中以内-->
+			<script id="baogaoluru-tem" type="text/html">
+				{{each data as value index}}
+				<div class="content-block-title">{{value.use_company}}</div>
+				<div class="list-block">
+					<ul>
+						<li>
+							<label class="label-checkbox item-content">
+				              <input type="checkbox" name="ks-checkbox" value="">
+				              <div class="item-media"><i class="icon icon-form-checkbox"></i></div>
+				              <div class="item-inner">
+				                <div class="item-title">06TDB1172/容1LC粤SSU466/容定检</div>
+				                <div class="right-button">{{if value.jingdu==0}}<button class="dituwu">无</button>{{/if}}{{if value.jingdu>0}}<button class="ditu" data-jing="{{value.jingdu}}" data-wei="{{value.weidu}}" data-shebei="储气罐">地图</button>{{/if}}<button class="luru">录入</button></div>
+				              </div>
+				            </label>
+						</li>
+					</ul>
+				</div>
+				{{/each}}
+			</script>
+			<!--底部菜单-->
+			<div class="baogaoluru-bottom row">
+				<div class="col-20">
+					<a>安全管理人</a>
+				</div>
+				<div class="col-20">
+					<a>廉政签名</a>
+				</div>
+				<div class="col-30">
+					<a>使用单位签名</a>
+				</div>
+				<div class="col-30">
+					<a>维保单位签名</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>

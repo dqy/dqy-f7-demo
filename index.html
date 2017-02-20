@@ -1,0 +1,158 @@
+<!--
+	作者：431890663@qq.com
+	时间：2016-09-14
+	描述：淡轻语的一个F7小物件
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, shrink-to-fit=no"">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>My App</title>
+		<!-- Path to Framework7 Library CSS-->
+		<link rel="stylesheet" id="css1" href="css/framework7.ios.min.css">
+		<link rel="stylesheet" id="css2" href="css/framework7.ios.colors.min.css">
+		<!--<link rel="stylesheet" href="css/framework7.3dpanels.min.css" />-->
+		<link rel="stylesheet" href="css/framework7-icons.css" />
+		<link rel="stylesheet" href="css/toast.css" />
+		<!-- Path to your custom app styles-->
+		<link rel="stylesheet" href="css/app.css">
+	</head>
+
+	<body class="theme-white">
+		<div class="statusbar-overlay"></div>
+		<div class="panel-overlay" style="background-color: rgba(0,0,0,0.8);"></div>
+		<div class="panel panel-right panel-reveal layout-white">
+			<div id="index-gonggao-box">
+				<h4>公告</h4>
+				<div id="index-gonggao-list-no">
+					目前没有公告信息
+				</div>
+			</div>
+		</div>
+		<div class="views">
+			<div class="view view-main">
+				<div class="navbar header-navbar">
+					<div class="navbar-inner">
+						<div class="sliding" id="index-search"><i class="f7-icons">search</i>地点名称,设备注册代码...</div>
+					</div>
+				</div>
+
+				<div class="pages navbar-through toolbar-through">
+					<div data-page="index" class="page">
+
+						<div class="page-content">
+							<!--百度地图-->
+							<div id="map">百度地图加载中...</div>
+							<div id="index-gonggao" class="open-panel"><i class="f7-icons">arrow_left</i></div>
+							<div id="index-dingwei"><img src="img/index/dingwei.png" /></div>
+						</div>
+						<!--底部菜单-->
+						<div class="toolbar bottom-navbar">
+							<div class="toolbar-inner row">
+								<div class="ks-demo-icon col-20">
+									<a href="fujin.html">
+										<div class="icon"><i class="f7-icons">navigation_fill</i></div>
+										<div class="icon-name">附近</div>
+									</a>
+								</div>
+								<div class="ks-demo-icon col-20">
+									<a href="baogaoluru.html">
+										<div class="icon"><i class="f7-icons">list_fill</i></div>
+										<div class="icon-name">报告录入</div>
+									</a>
+								</div>
+								<div class="ks-demo-icon col-20">
+									<a href="shangchuanbaogao.html">
+										<div class="icon"><i class="f7-icons">cloud_upload_fill</i></div>
+										<div class="icon-name">上传报告</div>
+									</a>
+								</div>
+								<div class="ks-demo-icon col-20">
+									<a href="mubanluru.html">
+										<div class="icon"><i class="f7-icons">tabs_fill</i></div>
+										<div class="icon-name">模板录入</div>
+									</a>
+								</div>
+								<div class="ks-demo-icon col-20">
+									<a href="shebei.html">
+										<div class="icon"><i class="f7-icons">keyboard_fill</i></div>
+										<div class="icon-name">设备业务</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--登录-->
+		<div class="login-screen">
+			<div class="view">
+				<div class="page">
+					<div class="page-content login-screen-content" style="background-image: url(img/denglu/img_login_bg.png);">
+						<img src="img/denglu/img_login_head.png" style="width: 60%;margin-left: 20%;margin-top: 10px;" />
+
+						<form>
+							<div class="list-block index-login">
+								<ul style="margin: 20px 0;border-bottom: 2px solid #999;">
+									<li class="item-content">
+										<div class="item-content">
+											<div class="item-media"><img src="img/denglu/img_login_edit_user.png" style="height: 29px;" /></div>
+											<div class="item-inner">
+												<div class="item-input">
+													<input type="text" placeholder="账号" name="username" value="lzh" />
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="item-content">
+										<div class="item-content">
+											<div class="item-media"><img src="img/denglu/img_login_edit_pass.png" style="height: 29px;" /></div>
+											<div class="item-inner">
+												<div class="item-input">
+													<input type="password" placeholder="密码" name="password" value="sunny"/>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+								<div style="padding: 0 20px;">
+									<a href="javascript:void(0)" class="login button button-big button-fill color-blue">登录</a>
+								</div>
+								<div class="index-login-bottom">
+									<ul>
+										<li style="text-align: center;">
+											<img src="img/denglu/ic_sei.png" />
+										</li>
+									</ul>
+									<div class="list-block-label" style="font-size: 12px;text-align: center;margin: 10px 0;">@理工软件悠闲公司.All Rights Reserved.</div>
+								</div>
+							</div>
+
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Path to Framework7 Library JS-->
+		<script type="text/javascript" src="js/framework7.min.js"></script>
+		<!--<script type="text/javascript" src="js/framework7.3dpanels.min.js"></script>-->
+		<script type="text/javascript" src="js/template.js"></script>
+		<script type="text/javascript" src="js/vue.min.js"></script>
+		<script type="text/javascript" src="js/toast.js"></script>
+		<!--baidu-->
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=8d1b7939047a17807193cc048c59675f"></script>
+		<script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
+		<link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />
+
+		<!-- Path to your app js-->
+		<script type="text/javascript" src="js/common.min.js"></script>
+		<script type="text/javascript" src="js/app.min.js"></script>
+	</body>
+
+</html>
